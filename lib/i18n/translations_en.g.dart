@@ -39,8 +39,8 @@ class TranslationsEn extends Translations with BaseTranslations<AppLocale, Trans
 	TranslationsEn $copyWith({TranslationMetadata<AppLocale, Translations>? meta}) => TranslationsEn(meta: meta ?? this.$meta);
 
 	// Translations
-	@override String get appTitle => 'Oddech';
-	@override String get onboardingTitle1 => 'Hi, I\'m Oddech';
+	@override String get appTitle => 'Breath';
+	@override String get onboardingTitle1 => 'Hi, I\'m Breath';
 	@override String get onboardingBody1 => 'What\'s your name? Type your first and last name and I\'ll watch you type.';
 	@override String onboardingGreeting({required String name}) => 'Nice to meet you, ${name}!';
 	@override String get onboardingTitle2 => 'When is your birthday?';
@@ -97,7 +97,7 @@ class TranslationsEn extends Translations with BaseTranslations<AppLocale, Trans
 	@override String get onboardingSendError => 'Couldn\'t save your profile. Please try again.';
 	@override String get onboardingBack => 'Back';
 	@override String get summaryErrorNotFound => 'Your profile wasn\'t found.';
-	@override String get mascotLabel => 'Oddech, your breathing buddy';
+	@override String get mascotLabel => 'Breath, your breathing buddy';
 }
 
 /// The flat map containing all translations for locale <en>.
@@ -108,8 +108,8 @@ class TranslationsEn extends Translations with BaseTranslations<AppLocale, Trans
 extension on TranslationsEn {
 	dynamic _flatMapFunction(String path) {
 		return switch (path) {
-			'appTitle' => 'Oddech',
-			'onboardingTitle1' => 'Hi, I\'m Oddech',
+			'appTitle' => 'Breath',
+			'onboardingTitle1' => 'Hi, I\'m Breath',
 			'onboardingBody1' => 'What\'s your name? Type your first and last name and I\'ll watch you type.',
 			'onboardingGreeting' => ({required String name}) => 'Nice to meet you, ${name}!',
 			'onboardingTitle2' => 'When is your birthday?',
@@ -157,7 +157,7 @@ extension on TranslationsEn {
 			'onboardingSendError' => 'Couldn\'t save your profile. Please try again.',
 			'onboardingBack' => 'Back',
 			'summaryErrorNotFound' => 'Your profile wasn\'t found.',
-			'mascotLabel' => 'Oddech, your breathing buddy',
+			'mascotLabel' => 'Breath, your breathing buddy',
 			_ => null,
 		};
 	}
