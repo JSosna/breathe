@@ -1,0 +1,16 @@
+targets:
+  $default:
+    builders:
+      slang_build_runner:
+        options:
+          base_locale: pl
+          fallback_strategy: base_locale
+          input_directory: lib/i18n
+          input_file_pattern: .i18n.arb
+          output_directory: lib/i18n
+          output_file_name: translations.g.dart
+      json_serializable:
+        options:
+          checked: true
+          field_rename: snake
+          explicit_to_json: true

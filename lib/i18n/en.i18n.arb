@@ -1,0 +1,104 @@
+{
+  "appTitle": "Breath",
+  "onboardingTitle1": "Hi, I'm Breath",
+  "onboardingBody1": "What's your name? Type your first and last name and I'll watch you type.",
+  "onboardingGreeting": "Nice to meet you, {name}!",
+  "@onboardingGreeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "onboardingTitle2": "When is your birthday?",
+  "onboardingBody2": "I need your date of birth to work out your age. Tap Next to save your profile.",
+  "onboardingTitle3": "Pick a goal",
+  "onboardingBody3": "The goal sets the bubble color and the summary text. You can change it anytime.",
+  "onboardingNext": "Next",
+  "onboardingStart": "Let's start",
+  "setupTitle": "Your session",
+  "setupSubtitle": "Breathe with the bubble. Changes apply right away.",
+  "paceLabel": "Pace",
+  "paceValue": "{count, plural, one{{count} breath per minute} other{{count} breaths per minute}}",
+  "@paceValue": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rhythmValue": "Inhale {inhale} s · exhale {exhale} s",
+  "@rhythmValue": {
+    "placeholders": {
+      "inhale": {
+        "type": "String"
+      },
+      "exhale": {
+        "type": "String"
+      }
+    }
+  },
+  "durationLabel": "Duration",
+  "durationValue": "{minutes, plural, one{{minutes} minute} other{{minutes} minutes}}",
+  "@durationValue": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "goalLabel": "Goal",
+  "goalRelax": "Relax",
+  "goalFocus": "Focus",
+  "goalSleep": "Sleep",
+  "inhale": "Inhale",
+  "exhale": "Exhale",
+  "showSummary": "Summary",
+  "summaryTitle": "Summary",
+  "summaryLoading": "Loading your profile...",
+  "summaryErrorNetwork": "Couldn't reach the server.",
+  "summaryErrorParsing": "The server sent invalid data.",
+  "summaryRetry": "Try again",
+  "summaryGreeting": "{name}, your session plan",
+  "@summaryGreeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "summaryAge": "{age, plural, one{{age} year} other{{age} years}}",
+  "@summaryAge": {
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "summaryAgeLabel": "Age",
+  "summaryBreathsLabel": "Breaths in session",
+  "summaryDurationLabel": "Minutes",
+  "summaryPaceLabel": "Per minute",
+  "summaryMessageDeepCalm": "A slow pace. Good for winding down after a long day.",
+  "summaryMessageRelax": "A good short break. For deeper calm, try a slightly slower pace.",
+  "summaryMessageFocus": "A steady pace will help you focus before work.",
+  "summaryMessageSleep": "A longer exhale will help you settle down before sleep.",
+  "summaryEdit": "Change settings",
+  "riveUnavailable": "Animation unavailable",
+  "onboardingFirstNameLabel": "First name",
+  "onboardingLastNameLabel": "Last name",
+  "onboardingBirthDateLabel": "Date of birth",
+  "onboardingAgeLine": "You're {age} old. Tap Next to save your profile.",
+  "onboardingSending": "Saving...",
+  "onboardingSendError": "Couldn't save your profile. Please try again.",
+  "onboardingBack": "Back",
+  "summaryErrorNotFound": "Your profile wasn't found.",
+  "@onboardingAgeLine": {
+    "placeholders": {
+      "age": {
+        "type": "String"
+      }
+    }
+  },
+  "mascotLabel": "Breath, your breathing buddy"
+}

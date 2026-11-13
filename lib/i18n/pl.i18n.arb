@@ -1,0 +1,104 @@
+{
+  "appTitle": "Oddech",
+  "onboardingTitle1": "Cześć, jestem Oddech",
+  "onboardingBody1": "Jak masz na imię? Wpisz imię i nazwisko, a ja będę zerkać, co piszesz.",
+  "onboardingGreeting": "Miło Cię poznać, {name}!",
+  "@onboardingGreeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "onboardingTitle2": "Kiedy masz urodziny?",
+  "onboardingBody2": "Z daty urodzenia policzę Twój wiek. Po kliknięciu „Dalej” zapiszę profil.",
+  "onboardingTitle3": "Wybierz cel",
+  "onboardingBody3": "Cel zmienia kolor bańki i treść podsumowania. Możesz go zmienić w każdej chwili.",
+  "onboardingNext": "Dalej",
+  "onboardingStart": "Zaczynamy",
+  "setupTitle": "Twoja sesja",
+  "setupSubtitle": "Oddychaj w rytmie bańki. Zmiany widać od razu.",
+  "paceLabel": "Tempo",
+  "paceValue": "{count, plural, one{{count} oddech na minutę} few{{count} oddechy na minutę} many{{count} oddechów na minutę} other{{count} oddechu na minutę}}",
+  "@paceValue": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "rhythmValue": "Wdech {inhale} s · wydech {exhale} s",
+  "@rhythmValue": {
+    "placeholders": {
+      "inhale": {
+        "type": "String"
+      },
+      "exhale": {
+        "type": "String"
+      }
+    }
+  },
+  "durationLabel": "Czas",
+  "durationValue": "{minutes, plural, one{{minutes} minuta} few{{minutes} minuty} many{{minutes} minut} other{{minutes} minuty}}",
+  "@durationValue": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "goalLabel": "Cel",
+  "goalRelax": "Relaks",
+  "goalFocus": "Skupienie",
+  "goalSleep": "Sen",
+  "inhale": "Wdech",
+  "exhale": "Wydech",
+  "showSummary": "Podsumowanie",
+  "summaryTitle": "Podsumowanie",
+  "summaryLoading": "Wczytuję profil...",
+  "summaryErrorNetwork": "Nie udało się połączyć z serwerem.",
+  "summaryErrorParsing": "Serwer zwrócił nieprawidłowe dane.",
+  "summaryRetry": "Spróbuj ponownie",
+  "summaryGreeting": "{name}, oto Twój plan",
+  "@summaryGreeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "summaryAge": "{age, plural, one{{age} rok} few{{age} lata} many{{age} lat} other{{age} roku}}",
+  "@summaryAge": {
+    "placeholders": {
+      "age": {
+        "type": "int"
+      }
+    }
+  },
+  "summaryAgeLabel": "Wiek",
+  "summaryBreathsLabel": "Oddechów w sesji",
+  "summaryDurationLabel": "Minuty",
+  "summaryPaceLabel": "Na minutę",
+  "summaryMessageDeepCalm": "Wolne tempo. Dobre na wyciszenie po ciężkim dniu.",
+  "summaryMessageRelax": "Dobra krótka przerwa. Jeśli chcesz się bardziej wyciszyć, zwolnij trochę tempo.",
+  "summaryMessageFocus": "Równe tempo pomoże Ci się skupić przed pracą.",
+  "summaryMessageSleep": "Dłuższy wydech pomoże Ci się wyciszyć przed snem.",
+  "summaryEdit": "Zmień ustawienia",
+  "riveUnavailable": "Animacja niedostępna",
+  "onboardingFirstNameLabel": "Imię",
+  "onboardingLastNameLabel": "Nazwisko",
+  "onboardingBirthDateLabel": "Data urodzenia",
+  "onboardingAgeLine": "Masz {age}. Po kliknięciu „Dalej” zapiszę profil.",
+  "onboardingSending": "Zapisuję...",
+  "onboardingSendError": "Nie udało się zapisać profilu. Spróbuj jeszcze raz.",
+  "onboardingBack": "Wstecz",
+  "summaryErrorNotFound": "Nie znaleziono Twojego profilu.",
+  "@onboardingAgeLine": {
+    "placeholders": {
+      "age": {
+        "type": "String"
+      }
+    }
+  },
+  "mascotLabel": "Oddech, Twój towarzysz oddychania"
+}

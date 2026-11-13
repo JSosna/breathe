@@ -1,0 +1,175 @@
+<Rive version="1" kind="fragment">
+    <!--
+        View model "BreathBubble":
+          breath  number 0..1, set every frame by the app
+          tint    color of the goal
+          pulse   trigger, ripple after a settings change
+    -->
+    <Artboard defaultStateMachineId="2:7" viewModelId="2:40" viewModelInstanceId="2:41" styleId="2:5" x="500" width="400" height="400" name="BreathBubble" id="2:2">
+        <LayoutComponentStyle name="Artboard Style" id="2:5"/>
+
+        <Node x="200" y="200" name="Center" id="2:10">
+            <Shape scaleX="1" scaleY="1" opacity="0" name="Ripple" id="2:11">
+                <Ellipse width="230" height="230" name="Path"/>
+                <Stroke thickness="4" name="Stroke">
+                    <SolidColor colorValue="FF6CC3B4" name="Tint"><DataBindContext sourcePathIds="2:40-2:48" propertyKey="37"/></SolidColor>
+                </Stroke>
+            </Shape>
+
+            <Node name="Core" id="2:12">
+                <DataBindContext sourcePathIds="2:40-2:45" propertyKey="16" converterId="2:60"/>
+                <DataBindContext sourcePathIds="2:40-2:45" propertyKey="17" converterId="2:60"/>
+                <Shape x="-30" y="-36" rotation="-0.55" opacity="0.4" name="Shine">
+                    <Ellipse width="54" height="30" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FFFFFFFF" name="C"/></Fill>
+                </Shape>
+                <Shape name="CoreShape">
+                    <Ellipse width="156" height="156" name="Path"/>
+                    <Fill name="Fill"><SolidColor colorValue="FF6CC3B4" name="Tint"><DataBindContext sourcePathIds="2:40-2:48" propertyKey="37"/></SolidColor></Fill>
+                </Shape>
+            </Node>
+
+            <Node name="Spin" id="2:13">
+                <Node name="Flower" id="2:14">
+                    <DataBindContext sourcePathIds="2:40-2:45" propertyKey="16" converterId="2:61"/>
+                    <DataBindContext sourcePathIds="2:40-2:45" propertyKey="17" converterId="2:61"/>
+                    <DataBindContext sourcePathIds="2:40-2:45" propertyKey="15" converterId="2:62"/>
+                    <Node rotation="0.0" name="Petal1">
+                        <Shape y="-64" opacity="0.38" name="Leaf">
+                            <Ellipse width="92" height="152" name="Path"/>
+                            <Fill name="Fill"><SolidColor colorValue="FF6CC3B4" name="Tint"><DataBindContext sourcePathIds="2:40-2:48" propertyKey="37"/></SolidColor></Fill>
+                        </Shape>
+                    </Node>
+                    <Node rotation="1.047198" name="Petal2">
+                        <Shape y="-64" opacity="0.38" name="Leaf">
+                            <Ellipse width="92" height="152" name="Path"/>
+                            <Fill name="Fill"><SolidColor colorValue="FF6CC3B4" name="Tint"><DataBindContext sourcePathIds="2:40-2:48" propertyKey="37"/></SolidColor></Fill>
+                        </Shape>
+                    </Node>
+                    <Node rotation="2.094395" name="Petal3">
+                        <Shape y="-64" opacity="0.38" name="Leaf">
+                            <Ellipse width="92" height="152" name="Path"/>
+                            <Fill name="Fill"><SolidColor colorValue="FF6CC3B4" name="Tint"><DataBindContext sourcePathIds="2:40-2:48" propertyKey="37"/></SolidColor></Fill>
+                        </Shape>
+                    </Node>
+                    <Node rotation="3.141593" name="Petal4">
+                        <Shape y="-64" opacity="0.38" name="Leaf">
+                            <Ellipse width="92" height="152" name="Path"/>
+                            <Fill name="Fill"><SolidColor colorValue="FF6CC3B4" name="Tint"><DataBindContext sourcePathIds="2:40-2:48" propertyKey="37"/></SolidColor></Fill>
+                        </Shape>
+                    </Node>
+                    <Node rotation="4.18879" name="Petal5">
+                        <Shape y="-64" opacity="0.38" name="Leaf">
+                            <Ellipse width="92" height="152" name="Path"/>
+                            <Fill name="Fill"><SolidColor colorValue="FF6CC3B4" name="Tint"><DataBindContext sourcePathIds="2:40-2:48" propertyKey="37"/></SolidColor></Fill>
+                        </Shape>
+                    </Node>
+                    <Node rotation="5.235988" name="Petal6">
+                        <Shape y="-64" opacity="0.38" name="Leaf">
+                            <Ellipse width="92" height="152" name="Path"/>
+                            <Fill name="Fill"><SolidColor colorValue="FF6CC3B4" name="Tint"><DataBindContext sourcePathIds="2:40-2:48" propertyKey="37"/></SolidColor></Fill>
+                        </Shape>
+                    </Node>
+                </Node>
+            </Node>
+
+            <Shape name="Halo" id="2:15">
+                <DataBindContext sourcePathIds="2:40-2:45" propertyKey="18" converterId="2:63"/>
+                <DataBindContext sourcePathIds="2:40-2:45" propertyKey="16" converterId="2:64"/>
+                <DataBindContext sourcePathIds="2:40-2:45" propertyKey="17" converterId="2:64"/>
+                <Ellipse width="360" height="360" name="Path"/>
+                <Fill name="Fill"><SolidColor colorValue="FF6CC3B4" name="Tint"><DataBindContext sourcePathIds="2:40-2:48" propertyKey="37"/></SolidColor></Fill>
+            </Shape>
+        </Node>
+
+        <StateMachine name="Main" id="2:7">
+            <StateMachineLayer name="Spin" id="2:8">
+                <AnyState x="400" y="-100"/>
+                <ExitState x="560" y="-100"/>
+                <EntryState x="0" y="0"><StateTransition stateToId="2:30"/></EntryState>
+                <AnimationState x="200" y="0" animationId="2:80" id="2:30"/>
+            </StateMachineLayer>
+            <StateMachineLayer name="Pulse" id="2:9">
+                <AnyState x="400" y="-100"/>
+                <ExitState x="560" y="-100"/>
+                <EntryState x="0" y="0"><StateTransition stateToId="2:31"/></EntryState>
+                <AnimationState x="200" y="0" animationId="2:85" id="2:31">
+                    <StateTransition stateToId="2:32">
+                        <TransitionViewModelCondition>
+                            <TransitionPropertyViewModelComparator>
+                                <BindablePropertyTrigger>
+                                    <DataBindContext sourcePathIds="2:40-2:49" propertyKey="686"/>
+                                </BindablePropertyTrigger>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueTriggerComparator/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnimationState>
+                <AnimationState x="200" y="160" animationId="2:86" reset="true" id="2:32">
+                    <StateTransition stateToId="2:31" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100"/>
+                    <StateTransition stateToId="2:32" enableEarlyExit="true">
+                        <TransitionViewModelCondition>
+                            <TransitionPropertyViewModelComparator>
+                                <BindablePropertyTrigger>
+                                    <DataBindContext sourcePathIds="2:40-2:49" propertyKey="686"/>
+                                </BindablePropertyTrigger>
+                            </TransitionPropertyViewModelComparator>
+                            <TransitionValueTriggerComparator/>
+                        </TransitionViewModelCondition>
+                    </StateTransition>
+                </AnimationState>
+            </StateMachineLayer>
+        </StateMachine>
+
+        <LinearAnimation loopValue="loop" duration="3600" name="Drift" id="2:80">
+            <KeyedObject objectId="2:13">
+                <KeyedProperty property="rotation">
+                    <KeyFrameDouble value="0" frame="0" interpolationType="linear"/>
+                    <KeyFrameDouble value="6.2831855" frame="3600" interpolationType="linear"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+
+        <LinearAnimation duration="1" name="Rest" id="2:85">
+            <KeyedObject objectId="2:11">
+                <KeyedProperty property="opacity"><KeyFrameDouble value="0" frame="0"/></KeyedProperty>
+                <KeyedProperty property="scaleX"><KeyFrameDouble value="1" frame="0"/></KeyedProperty>
+                <KeyedProperty property="scaleY"><KeyFrameDouble value="1" frame="0"/></KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+
+        <LinearAnimation duration="42" name="Ripple" id="2:86">
+            <KeyedObject objectId="2:11">
+                <KeyedProperty property="opacity">
+                    <KeyFrameDouble value="0.9" frame="0" interpolationType="linear"/>
+                    <KeyFrameDouble value="0" frame="42"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleX">
+                    <KeyFrameDouble value="0.9" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.2" y1="0.8" x2="0.4" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="1.65" frame="42"/>
+                </KeyedProperty>
+                <KeyedProperty property="scaleY">
+                    <KeyFrameDouble value="0.9" frame="0" interpolationType="cubic"><CubicEaseInterpolator x1="0.2" y1="0.8" x2="0.4" y2="1"/></KeyFrameDouble>
+                    <KeyFrameDouble value="1.65" frame="42"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+
+    <DataConverterRangeMapper minInput="0" maxInput="1" minOutput="0.62" maxOutput="1" clampLower="true" clampUpper="true" name="BreathToCoreScale" id="2:60"/>
+    <DataConverterRangeMapper minInput="0" maxInput="1" minOutput="0.5" maxOutput="1.15" clampLower="true" clampUpper="true" name="BreathToFlowerScale" id="2:61"/>
+    <DataConverterRangeMapper minInput="0" maxInput="1" minOutput="0" maxOutput="0.52" clampLower="true" clampUpper="true" name="BreathToFlowerTwist" id="2:62"/>
+    <DataConverterRangeMapper minInput="0" maxInput="1" minOutput="0.05" maxOutput="0.2" clampLower="true" clampUpper="true" name="BreathToHaloOpacity" id="2:63"/>
+    <DataConverterRangeMapper minInput="0" maxInput="1" minOutput="0.82" maxOutput="1.05" clampLower="true" clampUpper="true" name="BreathToHaloScale" id="2:64"/>
+
+    <ViewModel defaultInstanceId="2:41" name="BreathBubble" id="2:40">
+        <ViewModelPropertyNumber name="breath" id="2:45"/>
+        <ViewModelPropertyColor name="tint" id="2:48"/>
+        <ViewModelPropertyTrigger name="pulse" id="2:49"/>
+        <ViewModelInstance exports="true" name="Default" id="2:41">
+            <ViewModelInstanceNumber propertyValue="0.5" viewModelPropertyId="2:45"/>
+            <ViewModelInstanceColor propertyValue="FF6CC3B4" viewModelPropertyId="2:48"/>
+            <ViewModelInstanceTrigger viewModelPropertyId="2:49"/>
+        </ViewModelInstance>
+    </ViewModel>
+</Rive>
